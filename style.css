@@ -1,1 +1,42 @@
+/* Algemene styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    background: #f2f2f2;
+}
+
+/* Inputvelden */
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Knoppen */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Foutmelding */
+#msg {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+}
 
