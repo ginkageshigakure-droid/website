@@ -2,16 +2,52 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <title>Noma's Pizza - Welkom</title>
+  <title>Noma's Pizza - Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="landing">
-  <div class="landing-container">
-    <h1>Noma's Pizza</h1>
-    <p>3 pizza's voor maar <strong>€15</strong> – kies uit Shoarma, Margherita en Tonijn.</p>
-    <a href="dashboard.html" class="btn-primary">Ga naar het dashboard</a>
-  </div>
+<body>
+  <header class="topbar">
+    <h1>Noma's Pizza Dashboard</h1>
+    <div class="deal-badge">
+      3 pizza's voor €15
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <section class="cards">
+      <article class="card" data-name="Shoarma" data-price="5">
+        <h2>Pizza Shoarma</h2>
+        <p>Rijke shoarma, knoflooksaus, rode ui.</p>
+        <span class="price">€5</span>
+        <button class="btn-add">Voeg toe</button>
+      </article>
+
+      <article class="card" data-name="Margherita" data-price="5">
+        <h2>Pizza Margherita</h2>
+        <p>Tomatensaus, mozzarella, verse basilicum.</p>
+        <span class="price">€5</span>
+        <button class="btn-add">Voeg toe</button>
+      </article>
+
+      <article class="card" data-name="Tonijn" data-price="5">
+        <h2>Pizza Tonijn</h2>
+        <p>Tonijn, rode ui, zwarte olijven.</p>
+        <span class="price">€5</span>
+        <button class="btn-add">Voeg toe</button>
+      </article>
+    </section>
+
+    <aside class="order-panel">
+      <h2>Je bestelling</h2>
+      <ul id="order-list"></ul>
+      <div class="order-summary">
+        <p>Totaal: <span id="total-price">€0</span></p>
+        <p class="deal-info" id="deal-info">Deal: 3 pizza's voor €15</p>
+      </div>
+      <button class="btn-primary" id="checkout-btn">Bestelling afronden</button>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-
