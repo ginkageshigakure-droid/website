@@ -303,3 +303,33 @@ body.landing {
   border-radius: 6px;
   border: none;
 }
+.pizza-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.pizza-card {
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.pizza-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.pizza-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.pizza-card p {
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
